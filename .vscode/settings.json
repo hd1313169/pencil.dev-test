@@ -1,0 +1,11 @@
+{
+  "github.copilot.chat.mcp.servers": [
+    {
+      "id": "pencil",
+      "name": "Pencil Design Server",
+      "command": "npx",
+      "args": ["-y", "@pencil-dev/mcp-server"],
+      "enabled": true
+    }
+  ]
+}

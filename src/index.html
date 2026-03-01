@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pencil Login</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body class="min-h-screen bg-loginBg">
+    <main class="mx-auto flex min-h-screen w-full max-w-[1440px] items-center justify-center p-7 md:p-12">
+      <section class="grid w-full grid-cols-1 gap-8 md:grid-cols-[1fr_420px] md:gap-12">
+        <div class="flex flex-col justify-center gap-5 px-0 md:px-10">
+          <p class="text-sm font-semibold text-text-mutedOnDark md:text-lg">Pencil Workspace</p>
+          <h1 class="max-w-xl text-5xl font-bold leading-[1.1] text-text-primaryOnDark md:text-[54px]">
+            Welcome back to your design command center
+          </h1>
+          <p class="max-w-xl text-base leading-relaxed text-text-secondaryOnDark md:text-lg">
+            Sign in to manage prototypes, collaborate with your team, and ship polished product experiences faster.
+          </p>
+        </div>
+
+        <div class="flex items-center justify-center">
+          <form class="w-full rounded-cardMd border border-border-card bg-surface-card p-5 shadow-card md:w-[420px] md:rounded-cardLg md:p-7">
+            <header class="mb-5 space-y-2">
+              <h2 class="text-cardTitleMobile font-bold text-text-primaryOnLight md:text-cardTitleDesktop">Sign in</h2>
+              <p class="text-sm leading-relaxed text-text-secondaryOnLight">
+                Enter your email and password to access your account.
+              </p>
+            </header>
+
+            <div class="space-y-4">
+              <label class="block space-y-2">
+                <span class="text-sm font-semibold text-text-label">Email</span>
+                <input
+                  type="email"
+                  placeholder="name@company.com"
+                  class="h-inputMobile w-full rounded-controlSm border border-border-input bg-surface-input px-3 text-sm text-text-primaryOnLight placeholder:text-text-mutedOnDark outline-none md:h-input md:rounded-control"
+                />
+              </label>
+
+              <label class="block space-y-2">
+                <span class="text-sm font-semibold text-text-label">Password</span>
+                <input
+                  type="password"
+                  placeholder="••••••••••••"
+                  class="h-inputMobile w-full rounded-controlSm border border-border-input bg-surface-input px-3 text-sm text-text-primaryOnLight placeholder:text-text-mutedOnDark outline-none md:h-input md:rounded-control"
+                />
+              </label>
+
+              <div class="text-right">
+                <a href="#" class="text-[13px] font-semibold text-action-primaryStart md:text-sm">Forgot password?</a>
+              </div>
+
+              <button
+                type="submit"
+                class="h-btnMobile w-full rounded-controlSm bg-primaryButton text-base font-semibold text-white md:h-btn md:rounded-control"
+              >
+                Sign In
+              </button>
+
+              <p class="text-center text-[13px] text-text-secondaryOnLight md:text-sm">
+                New to Pencil?
+                <a href="#" class="font-semibold text-action-primaryStart">Create account</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
