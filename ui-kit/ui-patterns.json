@@ -1,0 +1,156 @@
+{
+  "meta": {
+    "name": "Pencil Login UI Kit",
+    "version": "1.0.0",
+    "source": "app.pen",
+    "generatedAt": "2026-03-01",
+    "themes": ["Theme=Default", "Theme=test"]
+  },
+  "foundations": {
+    "colors": {
+      "background": {
+        "primary": "{color.background.primary}",
+        "secondary": "{color.background.secondary}",
+        "tertiary": "{color.background.tertiary}"
+      },
+      "surface": {
+        "card": "{color.surface.card}",
+        "input": "{color.surface.input}"
+      },
+      "text": {
+        "primaryOnDark": "{color.text.primaryOnDark}",
+        "secondaryOnDark": "{color.text.secondaryOnDark}",
+        "mutedOnDark": "{color.text.mutedOnDark}",
+        "primaryOnLight": "{color.text.primaryOnLight}",
+        "secondaryOnLight": "{color.text.secondaryOnLight}",
+        "label": "{color.text.label}"
+      },
+      "action": {
+        "primaryStart": "{color.action.primaryStart}",
+        "primaryEnd": "{color.action.primaryEnd}"
+      },
+      "border": {
+        "card": "{color.border.card}",
+        "input": "{color.border.input}"
+      }
+    },
+    "typography": {
+      "fontFamily": {
+        "base": "{font.family.base}"
+      },
+      "scales": {
+        "heroDesktop": { "fontSize": "54px", "lineHeight": "1.1", "fontWeight": 700 },
+        "heroMobile": { "fontSize": "40px", "lineHeight": "1.1", "fontWeight": 700 },
+        "cardTitleDesktop": { "fontSize": "32px", "lineHeight": "1.2", "fontWeight": 700 },
+        "cardTitleMobile": { "fontSize": "28px", "lineHeight": "1.2", "fontWeight": 700 },
+        "body": { "fontSize": "14px", "lineHeight": "1.5", "fontWeight": 400 },
+        "label": { "fontSize": "14px", "lineHeight": "1.4", "fontWeight": 600 },
+        "button": { "fontSize": "16px", "lineHeight": "1.2", "fontWeight": 600 }
+      }
+    },
+    "radius": {
+      "cardDesktop": "{radius.card.lg}",
+      "cardMobile": "{radius.card.md}",
+      "controlDesktop": "{radius.control.md}",
+      "controlMobile": "{radius.control.sm}"
+    },
+    "elevation": {
+      "cardDesktop": "{shadow.card.desktop}",
+      "cardMobile": "{shadow.card.mobile}"
+    },
+    "size": {
+      "inputDesktop": "{size.input.desktop}",
+      "inputMobile": "{size.input.mobile}",
+      "buttonDesktop": "{size.button.desktop}",
+      "buttonMobile": "{size.button.mobile}"
+    },
+    "spacing": {
+      "1": "{space.1}",
+      "2": "{space.2}",
+      "3": "{space.3}",
+      "4": "{space.4}",
+      "5": "{space.5}",
+      "6": "{space.6}",
+      "7": "{space.7}",
+      "8": "{space.8}",
+      "12": "{space.12}"
+    }
+  },
+  "components": {
+    "card": {
+      "description": "Login card container",
+      "variants": {
+        "desktop": {
+          "class": "ui-card ui-card--desktop"
+        },
+        "mobile": {
+          "class": "ui-card ui-card--mobile"
+        }
+      },
+      "states": {
+        "default": "Base card style"
+      }
+    },
+    "input": {
+      "description": "Text input field",
+      "variants": {
+        "desktop": {
+          "class": "ui-input ui-input--desktop"
+        },
+        "mobile": {
+          "class": "ui-input ui-input--mobile"
+        }
+      },
+      "states": {
+        "default": "Neutral border",
+        "hover": "Slight emphasis",
+        "focus": "Brand focus ring",
+        "error": "Error border and ring",
+        "disabled": "Disabled surface and muted text"
+      }
+    },
+    "buttonPrimary": {
+      "description": "Primary CTA button",
+      "variants": {
+        "desktop": {
+          "class": "ui-btn-primary ui-btn-primary--desktop"
+        },
+        "mobile": {
+          "class": "ui-btn-primary ui-btn-primary--mobile"
+        }
+      },
+      "states": {
+        "default": "Gradient fill",
+        "hover": "Slightly elevated",
+        "active": "Pressed",
+        "focus": "Focus ring",
+        "disabled": "Lower opacity and no interaction"
+      }
+    },
+    "link": {
+      "description": "Secondary action text link",
+      "variants": {
+        "default": {
+          "class": "ui-link"
+        }
+      },
+      "states": {
+        "default": "Brand color",
+        "hover": "Darker emphasis",
+        "focus": "Focus ring",
+        "disabled": "Muted and non-interactive"
+      }
+    },
+    "label": {
+      "description": "Form field label",
+      "variants": {
+        "default": {
+          "class": "ui-label"
+        }
+      },
+      "states": {
+        "default": "Text label color"
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+@layer components {
+  .ui-card {
+    @apply border border-border-card bg-surface-card;
+  }
+
+  .ui-card--desktop {
+    @apply rounded-cardLg p-7 shadow-card;
+  }
+
+  .ui-card--mobile {
+    @apply rounded-cardMd p-5 shadow-cardMobile;
+  }
+
+  .ui-label {
+    @apply text-sm font-semibold text-text-label;
+  }
+
+  .ui-input {
+    @apply w-full border border-border-input bg-surface-input px-3 text-sm text-text-primaryOnLight outline-none transition;
+  }
+
+  .ui-input::placeholder {
+    @apply text-text-mutedOnDark;
+  }
+
+  .ui-input--desktop {
+    @apply h-input rounded-control;
+  }
+
+  .ui-input--mobile {
+    @apply h-inputMobile rounded-controlSm;
+  }
+
+  .ui-input:hover:not(:disabled) {
+    @apply border-text-label;
+  }
+
+  .ui-input:focus-visible {
+    @apply border-action-primaryStart ring-2 ring-action-primaryStart/30;
+  }
+
+  .ui-input--error {
+    @apply border-action-primaryEnd ring-2 ring-action-primaryEnd/30;
+  }
+
+  .ui-input:disabled {
+    @apply cursor-not-allowed border-border-card bg-surface-card text-text-secondaryOnLight;
+  }
+
+  .ui-btn-primary {
+    @apply inline-flex w-full items-center justify-center text-base font-semibold text-white transition;
+    @apply bg-primaryButton;
+  }
+
+  .ui-btn-primary--desktop {
+    @apply h-btn rounded-control;
+  }
+
+  .ui-btn-primary--mobile {
+    @apply h-btnMobile rounded-controlSm;
+  }
+
+  .ui-btn-primary:hover:not(:disabled) {
+    transform: translateY(-1px);
+    @apply shadow-cardMobile;
+  }
+
+  .ui-btn-primary:active:not(:disabled) {
+    transform: translateY(0);
+    @apply shadow-none;
+  }
+
+  .ui-btn-primary:focus-visible {
+    @apply ring-2 ring-action-primaryStart/40;
+  }
+
+  .ui-btn-primary:disabled {
+    @apply cursor-not-allowed opacity-50;
+  }
+
+  .ui-link {
+    @apply text-sm font-semibold text-action-primaryStart underline-offset-2 transition;
+  }
+
+  .ui-link:hover:not(.ui-link--disabled) {
+    @apply text-action-primaryEnd underline;
+  }
+
+  .ui-link:focus-visible {
+    @apply rounded-controlSm ring-2 ring-action-primaryStart/30;
+  }
+
+  .ui-link--disabled {
+    @apply pointer-events-none text-text-secondaryOnLight no-underline;
+  }
+}

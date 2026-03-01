@@ -12,10 +12,17 @@
 ├── canvas.variables.json    # 畫布變數快照，設計 token 來源
 ├── tokens.json              # 程式碼用 token，支援多 theme
 ├── tailwind.theme.extend.js # Tailwind 主題擴充，動態生成
+├── ui-kit/
+│   ├── ui-patterns.json     # UI Patterns 規格（Foundations + Components + States）
+│   └── README.md            # UI Kit 使用與接手指引
 ├── scripts/
 │   ├── sync-canvas-to-tokens.mjs      # 變數同步主腳本（canvas → tokens/theme）
 │   ├── build-theme.mjs                # 主題建置腳本，支援 TOKEN_THEME 切換
 │   └── sync-variables-from-pen.mjs    # watcher 腳本，監控設計變數快照
+├── src/
+│   ├── input.css            # Tailwind 入口（已載入 ui-kit.css）
+│   ├── ui-kit.css           # 可重用元件樣式層（含互動狀態）
+│   └── index.html           # 示例頁（以 UI kit class 組裝）
 ├── package.json             # npm script、依賴管理
 └── ...
 ```
@@ -35,7 +42,11 @@
 5. **擴充性**：
    - 可依需求 scaffold Vue/React 專案，並串接 token/theme。
    - 支援多 theme，主題切換自動刷新。
-6. **AI Agent 協作**：
+6. **UI Kit Library**：
+   - 已將畫布元件整理為 UI Patterns：顏色、字型、尺寸、圓角、陰影、間距。
+   - 已提供可重用元件與狀態：Card、Input、Primary Button、Link、Label。
+   - 元件狀態含 `default / hover / focus / active / error / disabled`（依元件適用）。
+7. **AI Agent 協作**：
    - 工程師可直接與 AI agent 溝通，進行腳本擴充、流程優化、框架串接等。
 
 ---
@@ -75,6 +86,23 @@ npm run dev
 
 - 工程師可直接與 AI agent 溝通，進行腳本擴充、流程優化、框架串接等。
 - 建議以設計工具（app.pen）為唯一權威來源，避免資料衝突。
+
+### 7. 使用 UI Kit Library
+
+- Patterns 規格：`ui-kit/ui-patterns.json`
+- 使用指南：`ui-kit/README.md`
+- 樣式入口：`src/ui-kit.css`（已由 `src/input.css` 載入）
+- 範例頁：`src/index.html`
+
+可直接在頁面／元件中套用 class：
+
+```html
+<div class="ui-card ui-card--mobile md:ui-card--desktop">...</div>
+<label class="ui-label">Email</label>
+<input class="ui-input ui-input--mobile md:ui-input--desktop" />
+<button class="ui-btn-primary ui-btn-primary--mobile md:ui-btn-primary--desktop">Sign In</button>
+<a class="ui-link" href="#">Forgot password?</a>
+```
 
 ---
 

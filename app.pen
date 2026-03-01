@@ -676,8 +676,8 @@
     {
       "type": "frame",
       "id": "JKo59",
-      "x": 2000,
-      "y": 0,
+      "x": 3473,
+      "y": -56,
       "name": "Design Tokens Spec",
       "width": 980,
       "height": 900,
@@ -810,7 +810,7 @@
       "type": "color",
       "value": [
         {
-          "value": "#2563eb",
+          "value": "#26eb7a",
           "theme": {
             "Theme": "Default"
           }

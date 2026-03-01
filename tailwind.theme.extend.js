@@ -22,7 +22,7 @@ module.exports = {
       "input": "#CBD5E1"
     },
     "action": {
-      "primaryStart": "#2563eb",
+      "primaryStart": "#26eb7a",
       "primaryEnd": "#47e6d2"
     }
   },
@@ -63,7 +63,7 @@ module.exports = {
   },
   "backgroundImage": {
     "loginBg": "linear-gradient(140deg, #0F172A 0%, #1E293B 45%, #334155 100%)",
-    "primaryButton": "linear-gradient(120deg, #2563eb 0%, #47e6d2 100%)"
+    "primaryButton": "linear-gradient(120deg, #26eb7a 0%, #47e6d2 100%)"
   },
   "fontSize": {
     "heroDesktop": [
